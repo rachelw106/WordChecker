@@ -4,7 +4,6 @@ public class Main
 {
     public static void main(String[] args)
     {
-        WordChecker w = new WordChecker ();
         ArrayList<String> words = new ArrayList<String>();
         words.add("an");
         words.add("band");
@@ -21,5 +20,16 @@ public class Main
         word.add("tools");
         WordChecker y = new WordChecker (word);
         System.out.println(y.isWordChain());
+
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("catch");
+        list.add("bobcat");
+        list.add("catchacat");
+        list.add("cat");
+        list.add("at");
+        WordChecker z = new WordChecker(list);
+        System.out.println(z.createList("cat"));
+        System.out.println(z.createList("catch"));
+        System.out.println(z.createList("dog"));
     }
 }
